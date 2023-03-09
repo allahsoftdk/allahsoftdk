@@ -12,12 +12,23 @@
 </head>
 <body>
     <header class="site-header sticky-top py-1" style="background-color: #c5c5c5">
-        <nav class="container d-flex flex-column flex-md-row justify-content-between">
+        <nav class="navbar navbar-expand container d-flex flex-column flex-md-row justify-content-between">
             <a class="py-2" href="#" aria-label="Product">
                 <img src="assets/img/allahsoft-logo-text.png" width="70" height="35">
             </a>
-            <a class="py-2 d-none d-md-inline-block align-self-center" href="#">Home</a>
-            <a class="py-2 d-none d-md-inline-block align-self-center" href="#features">Features</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarToggler">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
         <div id="home" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
@@ -26,9 +37,9 @@
                 <p class="lead fw-normal">Qibla Compass: More Than Just Direction-Finding! Experience Muslim Forums, Prayer Alarms, and Calendar Conversion!</p>
                 <a class="btn downloadBtn" href="https://github.com/allahsoftdk/allahsoft-react-native-app/releases/download/Pre-Production/Allahsoft.apk">Download now</a>
             </div>
-            <div class="product-device shadow-sm d-none d-md-block"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+            <img src="assets/app-showcase/mainPicture.png" style="max-width: 20%; height: auto;">
         </div>
+    </div>
     <div id="features" class="container pb-2">
         <div class="row">
             <div class="col-sm">
@@ -38,27 +49,37 @@
     </div>
     <div class="container">
         <div class="row text-center">
-            <div class="col-sm border">
-                Compass
-                <img src="assets/app-showcase/compass.png" style="max-width: 100%; height: auto;">
+            <div class="col-sm">
+                <h3>Compass</h3>
+                <h5 class="fw-normal">Find the Direction of Mecca with Ease</h5>
+                <img src="assets/app-showcase/compass.png" style="max-width: 80%; height: auto;">
             </div>
-            <div class="col-sm border">
-                Calender
-                <img src="assets/app-showcase/calender.png" style="max-width: 100%; height: auto;">
+            <div class="col-sm">
+                <h3>Calender</h3>
+                <h5 class="fw-normal">Stay Up-to-Date with Important Islamic Dates</h5>
+                <img src="assets/app-showcase/calender.png" style="max-width: 80%; height: auto;">
             </div>
-            <div class="col-sm border">
-                Prayer overview
-                <img src="assets/app-showcase/prayerScreen.png" style="max-width: 100%; height: auto;">
+            <div class="col-sm">
+                <h3>Prayer overview</h3>
+                <h5 class="fw-normal">Never Miss a Prayer Time Again</h5>
+                <img src="assets/app-showcase/prayerScreen.png" style="max-width: 80%; height: auto;">
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-sm border">
-                Quran
-                <img src="assets/app-showcase/quranPage.png" style="max-width: 70%; height: auto;">
+            <div class="col-sm">
+                <h3>Quran page</h3>
+                <h5 class="fw-normal">Read and Study the Quran Anywhere, Anytime</h5>
+                <img src="assets/app-showcase/quranPage.png" style="max-width: 80%; height: auto;">
             </div>
-            <div class="col-sm border">
-                Islamic Forum
-                <img src="assets/app-showcase/chatPage.png" style="max-width: 70%; height: auto;">
+            <div class="col-sm">
+                <h3>Islamic Forum</h3>
+                <h5 class="fw-normal">Connect with Like-Minded Muslims Worldwide</h5>
+                <img src="assets/app-showcase/chatPage.png" style="max-width: 80%; height: auto;">
+            </div>
+            <div class="col-sm">
+                <h3>Date Converter</h3>
+                <h5 class="fw-normal">Easily Convert Between Hijri and Gregorian Dates</h5>
+                <img src="assets/app-showcase/dateConverter.png" style="max-width: 80%; height: auto;">
             </div>
         </div>
     </div>
@@ -66,7 +87,6 @@
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
             <li class="nav-item"><a href="#features" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
         </ul>
         <p class="text-center text-muted">© 2023 Allahsoft</p>
     </footer>
