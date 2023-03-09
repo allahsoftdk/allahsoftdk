@@ -1,3 +1,5 @@
+<?php
+?>
 <html lang="en">
 <head>
     <title>Allahsoft</title>
