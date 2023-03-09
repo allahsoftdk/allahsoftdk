@@ -24,9 +24,20 @@ a:active {
     color: #165d31;
 }
 
+.mainPic{
+    max-width: 20%;
+    height: auto;
+}
+
+
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
+    }
+}
+@media (max-width: 1200px) {
+    .mainPic{
+        max-width: 40%;
     }
 }
 
